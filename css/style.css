@@ -1,0 +1,467 @@
+/*
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --accent-color: #F7654A;
+    --white-color: #FFFFFF;
+    --gray-color: #999999;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+/* title */
+
+.header {
+    background-image: url(../img/first-screen.jpg);
+    min-height: 740px;
+    background-repeat: no-repeat;
+}
+
+.header_title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 112px;
+}
+
+.burger {
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+    border: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burger_line {
+    width: 21px;
+    height: 3px;
+    background-color: var(--white-color);
+    margin-bottom: 4px;
+    display: block;
+}
+
+.burger_line:last-child {
+    margin-bottom: 0;
+}
+
+.h1 {
+    margin: 0 auto;
+    max-width: 734px;
+    color: var(--white-color);
+    font-family: 'Oswald', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02em;
+    line-height: 95px;
+}
+
+.h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 734px;
+    text-align: center;
+    margin-top: 17px;
+}
+
+/* content */
+
+.content {
+    min-height: 1080px;
+    margin: 0;
+}
+
+.content_about {
+    padding: 57px 130px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+
+    background-color: #F7F7F7;
+}
+
+.content_container {
+    max-width: 1110px;
+    min-height: 300px;
+    margin: 0 auto;
+
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+}
+
+.about_inner {
+    width: 190px;
+    height: 186px;
+}
+
+.number_about {
+    font-family: 'Oswald', sans-serif;
+    font-size: 72px;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.h_about {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.p_about {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.title_of_projects {
+    position: relative;
+    bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    max-width: 506px;
+    max-height: 43px;
+    margin: 0 auto;
+}
+
+.content_projects {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+}
+
+.projects_inner {
+    max-width: 350px;
+    max-height: 578px;
+}
+
+.img_project {
+    width: 350px;
+    height: 380px;
+}
+
+.project_line {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 55px;
+    height: 6px;
+    background-color: var(--accent-color);
+    display: block;
+    border: 0;
+}
+
+.project_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.project_p {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.content_request {
+    margin-top: 140px;
+    max-width: 100%;
+    min-height: 181px;
+    background-color: var(--accent-color);
+}
+
+.container_request {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.request_h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.request_h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.request_btn {
+    height: 49px;
+    width: 175px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 0;
+}
+
+.request_btn_p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* "Чем мы занимаемся?" */
+
+.content_make {
+    max-width: 1110px;
+    min-height: 639px;
+    margin: 0 auto;
+    margin-top: 155px;
+}
+
+.h_about {
+    margin: 0 auto;
+    max-width: 351px;
+    min-height: 43px;
+}
+
+.container_make {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 30px;
+}
+
+.inner_make {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    background-color: #F7F7F7;
+}
+
+/* img tower */
+
+.content_tower {
+    margin-top: 150px;
+    width: 100%;
+    height: 814px;
+    background-image: url(../img/town.svg);
+    background-repeat: repeat;
+}
+
+/* question */
+
+.content_question {
+    max-width: 730px;
+    height: 452px;
+    margin-left: 405px;
+    margin-top: 150px;
+}
+
+.question_inner {
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+
+.question_h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    max-width: 321px;
+    position: relative;
+    left: 394px;
+    bottom: 4px;
+    margin-bottom: 50px;
+}
+
+.question_h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.question_h3.close::before, .question_h3.open::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/triangle_standart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.question_h3.open::before {
+    transform: rotate(270deg);
+}
+
+.question_p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-color);
+    width: 730px;
+    height: 83px;
+    margin-top: 30px;
+}
+
+.question_h3.close + .question_p {
+    display: none;
+}
+
+/* Partners */
+
+.content_partners {
+    margin-top: 150px;
+    background-image: url(../img/rectangle_3.png);
+    width: 100%;
+    min-height: 364px;
+}
+
+.partners_h2 {
+    max-width: 256px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--white-color);
+    text-transform: uppercase;
+    position: relative;
+    top: 109px;
+    left: 834px;
+}
+
+.imgs_partners {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 158px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 64px;
+}
+
+.img_partners {
+    width: 170px;
+    height: 61px;
+}
+
+/* Feedback */
+
+.content_feedbacks {
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 1110px;
+    max-height: 431px;
+}
+
+.feedback {
+    background-color: #F7F7F7;
+    width: 350px;
+    height: 318px;
+}
+
+.feedback_h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    top: 10px;
+    left: 359px;
+}
+
+.feedbacks {
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+.unified_str {
+    width: 350px;
+    height: 25px;
+    display: flex;
+}
+
+.comma_feedback {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 33px;
+    top: 24px;
+}
+
+.h4_black {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.h4_accent {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+
+.feedback_p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-color);
+    line-height: 21px;
+    margin-top: 55px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 38px;
+    /* letter-spacing: 0.02em; */
+}

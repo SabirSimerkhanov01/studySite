@@ -1,78 +1,40 @@
-let timerID;
+// State
+const state = {
+    previousValue: '',
+    value: '',
+};
 
-document.querySelectorAll('.dropdown-toggle').forEach((el) => {
+
+// Отрисовка
+const watchedstate = (state) => {
+    const { previousValue } = state;
+    const { value } = state;
+
+    if (previousValue !== '') {
+        const previousValueH = document.getElementById(Number(previousValue));
+        previousValueH.classList.remove('open');
+        previousValueH.classList.add('close');
+    }
+
+    const valueH = document.getElementById(Number(value));
+    valueH.classList.remove('close');
+    valueH.classList.add('open');
+
+    if (value === previousValue) {
+        const el = document.getElementById(Number(value));
+        el.classList.remove('open');
+        el.classList.add('close');
+        state.value = '';
+    }
+};
+
+// Event
+const questions = document.querySelectorAll('.question_h3');
+
+questions.forEach((el) => {
     el.addEventListener('click', (e) => {
-        const path = e.currentTarget.dataset.path;
-        document.querySelectorAll('.dropdown-menu').forEach((el) => {
-            if (!document.querySelector(`[data-target="${path}"]`).classList.contains('open')) {
-                document.querySelector(`[data-target="${path}"]`).classList.add('menu-active');
-                timerID = setTimeout(() => {
-                    document.querySelector(`[data-target="${path}"]`).classList.add('open');
-                }, 0);
-            } if (document.querySelector(`[data-target="${path}"]`).classList.contains('open')) {
-                document.querySelector(`[data-target="${path}"]`).classList.remove('menu-active');
-                timerID = setTimeout(() => {
-                    document.querySelector(`[data-target="${path}"]`).classList.remove('open');
-                }, 0);
-            }
-        });
+        state.previousValue = state.value;
+        state.value = e.target.id;
+        watchedstate(state);
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.querySelectorAll('.dropdown-toggle').forEach((el) => {
-//     el.addEventListener('click', (e) => {
-//         const path = e.currentTarget.dataset.path;
-//         document.querySelectorAll('.dropdown-menu').forEach((el) => {
-//             if (!document.querySelector(`[data-target="${path}"]`).classList.contains('open')) {
-//                 document.querySelector(`[data-target="${path}"]`).classList.add('menu-active');
-//                 timerID = setTimeout(() => {
-//                     document.querySelector(`[data-target="${path}"]`).classList.add('open');
-//                 }, 0);
-//             } if (document.querySelector(`[data-target="${path}"]`).classList.contains('open')) {
-//                 document.querySelector(`[data-target="${path}"]`).classList.remove('menu-active');
-//                 timerID = setTimeout(() => {
-//                     document.querySelector(`[data-target="${path}"]`).classList.remove('open');
-//                 }, 0);
-//             }
-//         });
-//     });
-// });

@@ -1,57 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>Форма бронирования</title>
-
-    <style>
-
-    header {
-        font-family: 'Bebas Neue', cursive;
-        font-size: 40px;
-        color: black;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        padding: 20px;
-        margin: 0;
-        position: relative;
-    }
-
-    .container {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-
-    body {
-        background-image: url('./img/5594016.jpg');
-    }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Study site</title>
 </head>
-
 <body>
-    <header><h1>Rooms Select</h1></header>
+    <header class="header">
+        <div class="container">
+            <div class="header_title">
+                <img src="img/logo.svg" alt="Icon of company" class="logo">
+                <button class="burger">
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                    <span class="burger_line"></span>
+                </button>
+            </div>
+            <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
+            <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
+        </div>
+    </header>
 
-    <div class="container">
-        <div class="towns"></div>
-        <div class="floors"></div>
-        <div class="rooms"></div>
-        <div class="dates"></div>
-        <div class="text_area"></div>
-        <div class="clean"></div>
-        <div class="send"></div>
-    </div>
+    <section class="content">
+
+        <div class="content_container">
+            <div class="content_about">
+                <div class="about_inner">
+                    <h1 class="number_about">26</h1>
+                    <h4 class="h_about">лет</h4>
+                    <p class="p_about">на рынке</p>
+                </div>
+    
+                <div class="about_inner">
+                    <h1 class="number_about">26</h1>
+                    <h4 class="h_about">лет</h4>
+                    <p class="p_about">на рынке</p>
+                </div>
+    
+                <div class="about_inner">
+                    <h1 class="number_about">26</h1>
+                    <h4 class="h_about">лет</h4>
+                    <p class="p_about">на рынке</p>
+                </div>
+    
+                <div class="about_inner">
+                    <h1 class="number_about">26</h1>
+                    <h4 class="h_about">лет</h4>
+                    <p class="p_about">на рынке</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="title_of_projects">Наши самые большие проекты</h2>
+
+        <div class="content_projects">
+            <div class="projects_inner">
+                <img src="img/big_project.png" alt="Our big project" class="img_project">
+                <span class="project_line"></span>
+                <h4 class="project_title">Газпром Арена</h4>
+                <p class="project_p">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
+            </div>
+
+            <div class="projects_inner">
+                <img src="img/big_project.png" alt="Our big project" class="img_project">
+                <span class="project_line"></span>
+                <h4 class="project_title">Газпром Арена</h4>
+                <p class="project_p">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
+            </div>
+
+            <div class="projects_inner">
+                <img src="img/big_project.png" alt="Our big project" class="img_project">
+                <span class="project_line"></span>
+                <h4 class="project_title">Газпром Арена</h4>
+                <p class="project_p">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
+            </div>
+        </div>
+
+        <div class="content_request">
+            <div class="container_request">
+                <div>
+                    <h1 class="request_h1">Самые умные проекты</h1>
+                    <h3 class="request_h3">Реализуем самые смелые решения в России</h3>
+                </div>
+                <button class="request_btn">
+                    <img src="img/logo_email.svg" alt="logo of email" class="logo_request">
+                    <p class="request_btn_p">ваш запрос</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="content_make">
+            <h2 class="h_about">Чем мы занимаемся?</h2>
+            <div class="container_make">
+                <div class="inner_make">
+                    <img src="img/building.svg" alt="building" class="make_img">
+                </div>
+                <div class="inner_make">
+                    <img src="img/building.svg" alt="building" class="make_img">
+                </div>
+                <div class="inner_make">
+                    <img src="img/building.svg" alt="building" class="make_img">
+                </div>
+                <div class="inner_make">
+                    <img src="img/building.svg" alt="building" class="make_img">
+                </div>
+                <div class="inner_make">
+                    <img src="img/building.svg" alt="building" class="make_img">
+                </div>
+                <div class="inner_make">
+                    <img src="img/building.svg" alt="building" class="make_img">
+                </div>
+            </div>
+        </div>
+
+        <div class="content_tower"></div>
+
+        <div class="content_question">
+            <h2 class="question_h2">Ответы на вопросы</h2>
+
+            <div class="question_inner">
+                <h3 class="question_h3 close" id="1">Работаете ли вы по 249 ФЗ?</h3>
+                <p class="question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            </div>
+
+            <div class="question_inner">
+                <h3 class="question_h3 close" id="2">Работаете ли вы по 249 ФЗ?</h3>
+                <p class="question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            </div>
+
+            <div class="question_inner">
+                <h3 class="question_h3 close" id="3">Работаете ли вы по 249 ФЗ?</h3>
+                <p class="question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            </div>
+
+            <div class="question_inner">
+                <h3 class="question_h3 close" id="4">Работаете ли вы по 249 ФЗ?</h3>
+                <p class="question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+            </div>
+        </div>
+
+        <div class="content_partners">
+            <h2 class="partners_h2">Наши партнеры</h2>
+            <div class="imgs_partners">
+                <img src="img/berksho.svg" alt="berksho" class="img_partners">
+                <img src="img/berksho.svg" alt="berksho" class="img_partners">
+                <img src="img/berksho.svg" alt="berksho" class="img_partners">
+                <img src="img/berksho.svg" alt="berksho" class="img_partners">
+                <img src="img/berksho.svg" alt="berksho" class="img_partners">
+            </div>
+        </div>
+
+        <div class="content_feedbacks">
+            <h2 class="feedback_h2">Отзывы о работе с нами</h2>
+            <div class="feedbacks">
+                <div class="feedback">
+                    <img src="img/“.svg" alt="comma" class="comma_feedback">
+                    <p class="feedback_p">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                    </p>
+                    <div class="unified_str">
+                        <h4 class="h4_black">Иванов Иван,</h4>
+                        <h4 class="h4_accent">ООО “Газпром-Арена</h4>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="img/“.svg" alt="comma" class="comma_feedback">
+                    <p class="feedback_p">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                    </p>
+                    <div class="unified_str">
+                        <h4 class="h4_black">Иванов Иван,</h4>
+                        <h4 class="h4_accent">ООО “Газпром-Арена</h4>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="img/“.svg" alt="comma" class="comma_feedback">
+                    <p class="feedback_p">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                    </p>
+                    <div class="unified_str">
+                        <h4 class="h4_black">Иванов Иван,</h4>
+                        <h4 class="h4_accent">ООО “Газпром-Арена</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+
 </body>
-
 </html>
-
