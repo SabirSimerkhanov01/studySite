@@ -1,40 +1,48 @@
-// State
+const questionInner = document.querySelectorAll('.question');
+const triangle = document.querySelectorAll('.triangle');
+
 const state = {
-    previousValue: '',
-    value: '',
+    prevId: '',
+    id: '',
 };
 
+const render = (state) => {
+    const { id } = state;
+    const { prevId } = state;
 
-// Отрисовка
-const watchedstate = (state) => {
-    const { previousValue } = state;
-    const { value } = state;
+    if (prevId !== '') {
+        const previousValue = document.getElementById(Number(prevId));
+        previousValue.classList.remove('open');
+        previousValue.classList.add('close');
 
-    if (previousValue !== '') {
-        const previousValueH = document.getElementById(Number(previousValue));
-        previousValueH.classList.remove('open');
-        previousValueH.classList.add('close');
+        const previousV = previousValue.parentNode.querySelector('.question_p');
+        previousV.classList.remove('block');
+        previousV.classList.add('none');
     }
 
-    const valueH = document.getElementById(Number(value));
-    valueH.classList.remove('close');
-    valueH.classList.add('open');
+    const openEl = document.getElementById(Number(id));
+    const p = openEl.parentNode.querySelector('.question_p');
+    openEl.classList.remove('close');
+    openEl.classList.add('open');
 
-    if (value === previousValue) {
-        const el = document.getElementById(Number(value));
-        el.classList.remove('open');
-        el.classList.add('close');
-        state.value = '';
+    p.classList.remove('none');
+    p.classList.add('block');
+
+    if (prevId === id) {
+        openEl.classList.remove('open');
+        openEl.classList.add('close');
+    
+        p.classList.remove('block');
+        p.classList.add('none');
+        state.id = '';
     }
 };
 
-// Event
-const questions = document.querySelectorAll('.question_h3');
-
-questions.forEach((el) => {
+questionInner.forEach((el) => {
     el.addEventListener('click', (e) => {
-        state.previousValue = state.value;
-        state.value = e.target.id;
-        watchedstate(state);
+        const nowEl = e.target;
+        state.prevId = state.id;
+        state.id = nowEl.id;
+        render(state);
     });
 });
